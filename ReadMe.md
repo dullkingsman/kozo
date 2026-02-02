@@ -17,7 +17,7 @@ The library follows standard Go module conventions. And provides each data struc
 A generic, thread-safe stack implementation. See [Stack Documentation](pkg/stack/ReadMe.md) for detailed API and optimizations.
 
 ```go
-import "kozo/pkg/stack"
+import "github.com/dullkingsman/kozo/pkg/stack"
 
 // Create a new stack
 s := stack.New[int]()
@@ -34,7 +34,7 @@ v, ok := s.Pop()
 A generic `ExistenceClaim[T]` type for filtering, representing "In" or "NotIn" logic. See [Existence Claim Documentation](pkg/existence/ReadMe.md) for details.
 
 ```go
-import "kozo/pkg/existence"
+import "github.com/dullkingsman/kozo/pkg/existence"
 
 // Values must be one of these
 claim := existence.In("active", "pending")
@@ -46,7 +46,7 @@ match := existence.CheckComparable(claim, "active") // true
 A generic `Range[T]` type for intervals. See [Range Documentation](pkg/range/ReadMe.md) for details.
 
 ```go
-import "kozo/pkg/_range"
+import "github.com/dullkingsman/kozo/pkg/_range"
 
 // Inclusive range [10, 20]
 r := _range.Closed(10, 20)
@@ -58,7 +58,7 @@ match := _range.ContainsOrdered(r, 15) // true
 A generic `Optional[T]` type that distinguishes between absent, null, and present values. See [Optional Documentation](pkg/optional/ReadMe.md) for detailed information on the three-state model and JSON support.
 
 ```go
-import "kozo/pkg/optional"
+import "github.com/dullkingsman/kozo/pkg/optional"
 
 // Create a Some (present) optional with a value
 o := optional.Some(42)
@@ -74,7 +74,7 @@ if v, ok := o.Unwrap(); ok {
 A generic, thread-safe queue implementation optimized for $O(1)$ performance. See [Queue Documentation](pkg/queue/ReadMe.md) for detailed API and optimizations.
 
 ```go
-import "kozo/pkg/queue"
+import "github.com/dullkingsman/kozo/pkg/queue"
 
 // Create a new queue
 q := queue.New[int]()
@@ -91,7 +91,7 @@ v, ok := q.Dequeue()
 A generic, thread-safe set implementation. Provides `Set[T comparable]` for $O(1)$ performance and `AnySet[T any]` for custom equality. See [Set Documentation](pkg/set/ReadMe.md) for detailed API and optimizations.
 
 ```go
-import "kozo/pkg/set"
+import "github.com/dullkingsman/kozo/pkg/set"
 
 // Create a new set
 s := set.New("apple", "banana")

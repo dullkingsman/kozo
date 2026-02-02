@@ -26,7 +26,7 @@ go get "kozo/pkg/optional"
 ### Construction
 
 ```go
-import "kozo/pkg/optional"
+import "github.com/dullkingsman/kozo/pkg/optional"
 
 // Create a None (absent) optional
 o1 := optional.None[int]()

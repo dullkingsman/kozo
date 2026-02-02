@@ -28,7 +28,7 @@ go get kozo/pkg/set
 ### Using `Set` (Comparable)
 
 ```go
-import "kozo/pkg/set"
+import "github.com/dullkingsman/kozo/pkg/set"
 
 func main() {
     // Create a new set of strings
@@ -47,7 +47,7 @@ func main() {
 ### Using `AnySet` (With Equals Function)
 
 ```go
-import "kozo/pkg/set"
+import "github.com/dullkingsman/kozo/pkg/set"
 
 type User struct { ID int; Name string }
 

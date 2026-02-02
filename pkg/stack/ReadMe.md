@@ -21,7 +21,7 @@ go get kozo/pkg/stack
 
 ```go
 
-import "kozo/pkg/stack"
+import "github.com/dullkingsman/kozo/pkg/stack"
 
 func main() {
     // Create a new stack for integers

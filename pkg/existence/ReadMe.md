@@ -22,7 +22,7 @@ go get kozo/pkg/existence
 ### Construction
 
 ```go
-import "kozo/pkg/existence"
+import "github.com/dullkingsman/kozo/pkg/existence"
 
 // Inclusive filter (In)
 claim := existence.In("active", "pending")

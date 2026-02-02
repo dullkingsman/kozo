@@ -19,7 +19,7 @@ go get kozo/pkg/_range
 ## Quick Start
 
 ```go
-import "kozo/pkg/_range"
+import "github.com/dullkingsman/kozo/pkg/_range"
 
 func main() {
     // Create an inclusive range [10, 20]

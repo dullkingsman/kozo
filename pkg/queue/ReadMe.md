@@ -21,7 +21,7 @@ go get kozo/pkg/queue
 ## Quick Start
 
 ```go
-import "kozo/pkg/queue"
+import "github.com/dullkingsman/kozo/pkg/queue"
 
 func main() {
     // Create a new queue for integers
