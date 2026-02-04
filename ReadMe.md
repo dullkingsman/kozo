@@ -14,7 +14,7 @@ The library follows standard Go module conventions. And provides each data struc
 
 ### Stack
 
-A generic, thread-safe stack implementation. See [Stack Documentation](pkg/stack/ReadMe.md) for detailed API and optimizations.
+A generic, thread-safe stack implementation. See [Stack Documentation](stack/ReadMe.md) for detailed API and optimizations.
 
 ```go
 import "github.com/dullkingsman/kozo/pkg/stack"
@@ -31,7 +31,7 @@ v, ok := s.Pop()
 
 ### Existence Claim
 
-A generic `ExistenceClaim[T]` type for filtering, representing "In" or "NotIn" logic. See [Existence Claim Documentation](pkg/existence/ReadMe.md) for details.
+A generic `ExistenceClaim[T]` type for filtering, representing "In" or "NotIn" logic. See [Existence Claim Documentation](existence/ReadMe.md) for details.
 
 ```go
 import "github.com/dullkingsman/kozo/pkg/existence"
@@ -43,7 +43,7 @@ match := existence.CheckComparable(claim, "active") // true
 
 ### Range
 
-A generic `Range[T]` type for intervals. See [Range Documentation](pkg/range/ReadMe.md) for details.
+A generic `Range[T]` type for intervals. See [Range Documentation](range/ReadMe.md) for details.
 
 ```go
 import "github.com/dullkingsman/kozo/pkg/_range"
@@ -55,7 +55,7 @@ match := _range.ContainsOrdered(r, 15) // true
 
 ### Optional
 
-A generic `Optional[T]` type that distinguishes between absent, null, and present values. See [Optional Documentation](pkg/optional/ReadMe.md) for detailed information on the three-state model and JSON support.
+A generic `Optional[T]` type that distinguishes between absent, null, and present values. See [Optional Documentation](optional/ReadMe.md) for detailed information on the three-state model and JSON support.
 
 ```go
 import "github.com/dullkingsman/kozo/pkg/optional"
@@ -71,7 +71,7 @@ if v, ok := o.Unwrap(); ok {
 
 ### Queue
 
-A generic, thread-safe queue implementation optimized for $O(1)$ performance. See [Queue Documentation](pkg/queue/ReadMe.md) for detailed API and optimizations.
+A generic, thread-safe queue implementation optimized for $O(1)$ performance. See [Queue Documentation](queue/ReadMe.md) for detailed API and optimizations.
 
 ```go
 import "github.com/dullkingsman/kozo/pkg/queue"
@@ -88,7 +88,7 @@ v, ok := q.Dequeue()
 
 ### Set
 
-A generic, thread-safe set implementation. Provides `Set[T comparable]` for $O(1)$ performance and `AnySet[T any]` for custom equality. See [Set Documentation](pkg/set/ReadMe.md) for detailed API and optimizations.
+A generic, thread-safe set implementation. Provides `Set[T comparable]` for $O(1)$ performance and `AnySet[T any]` for custom equality. See [Set Documentation](set/ReadMe.md) for detailed API and optimizations.
 
 ```go
 import "github.com/dullkingsman/kozo/pkg/set"
